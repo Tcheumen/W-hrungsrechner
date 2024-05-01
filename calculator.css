@@ -1,0 +1,61 @@
+/* 
+     Autor....: Lionel Tcheumen
+     Version....: 0.001
+
+*/
+
+
+body{
+    background-color: rgb(240, 236, 231);
+}
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px; 
+}
+
+
+tr{
+    background-color: bisque;
+}
+
+.farbe1 {
+    background-color: rgb(228, 240, 166);
+}
+
+.farbe2 {
+    background-color: rgb(189, 233, 244);
+}
+
+.farbe3 {
+    background-color: rgb(207, 247, 172);
+}
+
+t1 {
+    font-weight:  bold;
+}
+
+input[type=number], input[type=text] {
+    border: 2px solid;
+    border-radius: 6px;
+    padding: 0.3%;
+}
+
+input[type=button]{
+    border: 1.9px;
+    background-color: rgb(120, 93, 11);
+    border-radius: 6px;
+    color: white;
+    padding: 0.6%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2rem;
+}
+
+p, h1 {
+    color:  rgb(120, 93, 11);
+}

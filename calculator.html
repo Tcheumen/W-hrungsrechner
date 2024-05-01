@@ -1,0 +1,47 @@
+<!--
+ Autor....: Lionel Tcheumen
+ Version....: 0.001
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency calculator V-04</title>
+    <link rel = "stylesheet" href="calculator.css">
+    <script  src="calculator.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id = "Version"> Währungsrecher </h1>
+        <hr>
+    </header>
+    <main>
+        <section class = "sb-m">
+          <div id = "eingabe" >
+           <form id = "währung_eingabe">
+             <h4> Dieser Währungsrecher zeigt die Wechselkurse für zwei Währungen an </h4>
+              <label  for ="Währung1"> Währung1 </label>
+              <input name = "währung1" id ="Währung1"  type = "text"   placeholder="Euro" onkeyup="changeToDollars()">
+              <label for = "Währung2"> Währung2</label>
+              <input name = "Währung2" id = "Währung2"  type = "text" placeholder="Dollar" onkeyup="changeToEuro()">
+              <input  class = "as-button" id = "swp" type = "button" value = "Swap" onkeyup="swapping()" onclick="swapping()">
+              <br> <br>
+              <label for = "Wechsel_rate"> Wechsel_rate </label>  
+              <input name = "Wechsel_rate" id = "Wechsel_rate" type = "number" placeholder="rate">
+              <input type = "button" value= "Tabellenbezeichnung" id = "Tabellenbezeichnung" onkeyup="tableCreate()" onclick="tableCreate()">
+    
+              <p> Wechsel rate Dollar/Euro = <span id ="Wechsel"></span> </p>
+    
+           </form>
+          </div>
+          <div id = "tabelle_erzeugen">
+
+          </div>
+        </section>
+        </main>
+</body>
+</html>
